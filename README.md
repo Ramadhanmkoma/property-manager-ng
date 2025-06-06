@@ -1,59 +1,5 @@
 # PropertyManagerNg
 
-property-manager-ng/
-│
-├── src/
-│   ├── app/
-│   │   ├── core/                # Singleton services, interceptors, guards, core modules
-│   │   │   ├── services/
-│   │   │   ├── interceptors/
-│   │   │   ├── guards/
-│   │   │   └── core.module.ts
-│   │   │
-│   │   ├── shared/              # Shared components, directives, pipes, shared modules
-│   │   │   ├── components/
-│   │   │   ├── directives/
-│   │   │   ├── pipes/
-│   │   │   └── shared.module.ts
-│   │   │
-│   │   ├── pages/               # Feature pages (routed views)
-│   │   │   ├── login/
-│   │   │   │   ├── login.component.ts
-│   │   │   │   ├── login.html
-│   │   │   │   ├── login.css
-│   │   │   │   └── login.module.ts
-│   │   │   ├── not-found/
-│   │   │   ├── dashboard/
-│   │   │   └── ...other pages...
-│   │   │
-│   │   ├── features/            # Feature modules (domain-specific, lazy-loaded)
-│   │   │   ├── tenants/
-│   │   │   ├── properties/
-│   │   │   ├── payments/
-│   │   │   └── ...other features...
-│   │   │
-│   │   ├── layouts/             # Layout components (main, auth, etc.)
-│   │   │   ├── main-layout/
-│   │   │   ├── auth-layout/
-│   │   │   └── ...
-│   │   │
-│   │   ├── app.component.ts
-│   │   ├── app.module.ts
-│   │   ├── app.routing.ts
-│   │   └── ...
-│   │
-│   ├── assets/                  # Images, fonts, icons, etc.
-│   ├── environments/            # environment.ts, environment.prod.ts
-│   ├── styles/                  # Global styles (e.g., tailwind.css)
-│   └── index.html
-│
-├── tailwind.config.js
-├── angular.json
-├── package.json
-└── ...
-
-
-
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
 ## Development server
