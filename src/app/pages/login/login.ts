@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { Auth } from '../../core/services/auth';
 
 @Component({
@@ -7,6 +8,7 @@ import { Auth } from '../../core/services/auth';
   imports: [
     ReactiveFormsModule,
     FormsModule,
+    RouterLink,
   ],
   templateUrl: './login.html',
   styleUrl: './login.css',
