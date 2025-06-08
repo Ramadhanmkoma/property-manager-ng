@@ -1,0 +1,118 @@
+<div class="p-6 bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen">
+  <h1 class="text-2xl font-bold text-blue-800 mb-6">Dashboard</h1>
+  <!-- Stats Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <!-- Tenants Card -->
+    <div class="bg-white rounded-xl shadow-lg p-5 flex items-center space-x-4 hover:shadow-xl transition">
+      <div class="bg-blue-100 p-3 rounded-full">
+        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6 5.87v-2a4 4 0 00-3-3.87m6 5.87a4 4 0 01-3-3.87m0 0V4a4 4 0 018 0v12"></path>
+        </svg>
+      </div>
+      <div>
+        <div class="text-lg font-semibold text-blue-800">Tenants</div>
+        <div class="text-2xl font-bold text-blue-600">24</div>
+      </div>
+    </div>
+    <!-- Properties Card -->
+    <div class="bg-white rounded-xl shadow-lg p-5 flex items-center space-x-4 hover:shadow-xl transition">
+      <div class="bg-green-100 p-3 rounded-full">
+        <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l9-7 9 7v8a2 2 0 01-2 2h-2a2 2 0 01-2-2v-4a2 2 0 00-2-2h-2a2 2 0 00-2 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="text-lg font-semibold text-green-800">Properties</div>
+        <div class="text-2xl font-bold text-green-600">12</div>
+      </div>
+    </div>
+    <!-- Payments Card -->
+    <div class="bg-white rounded-xl shadow-lg p-5 flex items-center space-x-4 hover:shadow-xl transition">
+      <div class="bg-yellow-100 p-3 rounded-full">
+        <svg class="w-7 h-7 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 0V4m0 7v7m-7-7h14"/>
+        </svg>
+      </div>
+      <div>
+        <div class="text-lg font-semibold text-yellow-800">Payments</div>
+        <div class="text-2xl font-bold text-yellow-600">₦1,200,000</div>
+      </div>
+    </div>
+    <!-- Support Tickets Card -->
+    <div class="bg-white rounded-xl shadow-lg p-5 flex items-center space-x-4 hover:shadow-xl transition">
+      <div class="bg-red-100 p-3 rounded-full">
+        <svg class="w-7 h-7 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-1.414 1.414A8 8 0 105.636 18.364l1.414-1.414A6 6 0 1118.364 5.636z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="text-lg font-semibold text-red-800">Support</div>
+        <div class="text-2xl font-bold text-red-600">3 Open</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recent Activity Table -->
+  <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-lg font-bold text-blue-800">Recent Activity</h2>
+      <a href="#" class="text-blue-600 hover:underline text-sm">View all</a>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-blue-100">
+        <thead>
+          <tr>
+            <th class="px-4 py-2 text-left text-xs font-semibold text-blue-700 uppercase">Date</th>
+            <th class="px-4 py-2 text-left text-xs font-semibold text-blue-700 uppercase">Activity</th>
+            <th class="px-4 py-2 text-left text-xs font-semibold text-blue-700 uppercase">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-blue-50">
+          <tr>
+            <td class="px-4 py-2 text-sm text-gray-700">2025-06-08</td>
+            <td class="px-4 py-2 text-sm text-gray-700">Payment received from John Doe</td>
+            <td class="px-4 py-2">
+              <span class="inline-block px-2 py-1 text-xs rounded bg-green-100 text-green-700">Success</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 text-sm text-gray-700">2025-06-07</td>
+            <td class="px-4 py-2 text-sm text-gray-700">New tenant registered</td>
+            <td class="px-4 py-2">
+              <span class="inline-block px-2 py-1 text-xs rounded bg-blue-100 text-blue-700">Info</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 text-sm text-gray-700">2025-06-06</td>
+            <td class="px-4 py-2 text-sm text-gray-700">Support ticket opened</td>
+            <td class="px-4 py-2">
+              <span class="inline-block px-2 py-1 text-xs rounded bg-red-100 text-red-700">Open</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <button class="flex items-center justify-center space-x-2 bg-blue-600 text-white px-6 py-4 rounded-xl shadow hover:bg-blue-700 transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+      </svg>
+      <span>Add Property</span>
+    </button>
+    <button class="flex items-center justify-center space-x-2 bg-green-600 text-white px-6 py-4 rounded-xl shadow hover:bg-green-700 transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 00-3-3.87M12 3a4 4 0 00-4 4v4a4 4 0 004 4 4 4 0 004-4V7a4 4 0 00-4-4z"/>
+      </svg>
+      <span>Add Tenant</span>
+    </button>
+    <button class="flex items-center justify-center space-x-2 bg-yellow-500 text-white px-6 py-4 rounded-xl shadow hover:bg-yellow-600 transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 0V4m0 7v7m-7-7h14"/>
+      </svg>
+      <span>Record Payment</span>
+    </button>
+  </div>
+</div>

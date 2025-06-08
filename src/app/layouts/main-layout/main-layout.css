@@ -1,0 +1,28 @@
+.main-container {
+  width: 100vw;
+  height: 100dvh;
+  border: 1px solid #555;
+  background: #eee;
+}
+
+.side-drawer {
+  width: fit-content;
+  max-width: 280px;
+  height: 100%;
+  background: #fff;
+  border-radius: 0 !important;
+}
+
+/* .main-content {
+  width: calc(100% - 280px);
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.main-content > * {
+  width: 100%;
+}
+.main-content > .content {
+  width: 100%;
+  height: 100%;
+} */

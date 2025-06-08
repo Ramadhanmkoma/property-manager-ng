@@ -1,0 +1,20 @@
+<header class="flex items-center justify-between bg-white shadow px-4 py-3 sticky top-0 z-30">
+  <!-- Drawer Toggle -->
+  <button (click)="drawer.toggle()" class="p-2 rounded hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    <ng-icon [svg]="icons.menu" class="w-6 h-6 text-blue-700"></ng-icon>
+  </button>
+  <!-- Logo or Title -->
+  <span class="text-xl font-bold text-blue-700 ml-2">Property Manager</span>
+  <!-- Right Icons -->
+  <div class="flex items-center space-x-4">
+    <button class="p-2 rounded hover:bg-blue-100 focus:outline-none">
+      <ng-icon [svg]="icons.bell" class="w-6 h-6 text-blue-700"></ng-icon>
+    </button>
+    <button class="p-2 rounded hover:bg-blue-100 focus:outline-none">
+      <ng-icon [svg]="icons.settings" class="w-6 h-6 text-blue-700"></ng-icon>
+    </button>
+    <button class="p-2 rounded-full hover:bg-blue-100 focus:outline-none">
+      <ng-icon [svg]="icons.user" class="w-6 h-6 text-blue-700"></ng-icon>
+    </button>
+  </div>
+</header>
