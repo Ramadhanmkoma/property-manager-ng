@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Auth } from '../../core/services/auth';
 
 @Component({
@@ -10,10 +11,13 @@ import { Auth } from '../../core/services/auth';
     FormsModule,
     RouterLink,
   ],
+  // providers: [ToastrService],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
 export class Login {
+
+  constructor(private toastr: ToastrService) {}
 
   #authService: Auth = inject(Auth);
 
@@ -28,12 +32,12 @@ export class Login {
   login() {
     this.#authService.login(this.credentials).subscribe({
       next: (response) => {
-        // ...existing code...
+        this.toastr.success('Login successful!', 'Success');
       },
       error: (error) => {
         this.errorMessage = 'Login failed. Please check your credentials.';
         this.showError = true;
-        setTimeout(() => this.showError = false, 3000); // Hide after 3s
+        this.toastr.error('Login failed. Please check your credentials.', 'Error');
       }
     });
   }

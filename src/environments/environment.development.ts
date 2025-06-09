@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:8090/api/v1',
-  authUrl: 'http://172.24.0.2:8090/auth',
+  apiUrl: '/api/v1',
+  authUrl: '/auth',
   version: '1.0.0',
   appName: 'Property Manager',
   appDescription: 'Mkoma Property Managers is a property management system designed to streamline the registration and management of tenants, properties, and contracts.',
